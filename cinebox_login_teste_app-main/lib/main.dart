@@ -14,3 +14,12 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(title: 'Broadway Shows', home: ShowsPage());
   }
 }
+
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key, required this.title});
+
+  final String title;
+
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
